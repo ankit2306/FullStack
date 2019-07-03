@@ -1,6 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+     Welcome {{name}} ;)
   </h1>
+  <div app-left (childEvent)="message=$event" [parentData]="name"></div>
+  <h2>
+    {{message}} ;)
+  </h2>
+  <app-employee-list></app-employee-list>
+  <app-employee-details></app-employee-details>
 </div>
